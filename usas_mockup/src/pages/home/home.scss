@@ -1,0 +1,58 @@
+page-home {
+    .content-ios{
+        background-color: #e2e2e2;
+    }
+    .content-md{
+        background-color: #e2e2e2;
+    }
+
+    ion-card{
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+        margin-bottom: 1% !important;
+        margin-top: 2% !important;
+    }
+    ion-card.news_feed{
+        width: 96% !important;
+        border-radius: 7px;
+    }
+    ion-card-content{
+        background-color: #e2e2e2;
+        color: #e2e2e2;
+    }
+    .icon-size{
+        width: 10px;
+    }
+    .post-source{
+        font-size: 0.9em;
+    }
+    .post-content{
+        text-align: justify;
+        line-height: 1.7em;
+        margin-left: 5pt !important;
+        margin-right: 5pt !important;
+        margin-bottom: 5pt !important;
+        margin-top: 1pt !important;
+    }
+    ion-col{
+        margin-left: 1% !important;
+        margin-right: 1% !important;
+        margin-bottom: 1% !important;
+        margin-top: 1% !important;
+    }
+    .sub-menu{
+        margin-top: 0 !important;
+    }
+    .post-content-gap{
+        padding-top: 10px;
+    }
+    .attend_button{
+        width: 98%;
+        height: 10pt;
+        margin-left: 1% !important;
+        margin-right: 1% !important;
+        padding-bottom: 20% !important;
+        padding-top: 8% !important;
+    }
+
+}

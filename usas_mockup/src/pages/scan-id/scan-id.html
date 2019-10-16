@@ -1,0 +1,133 @@
+<!--
+  Generated template for the ScanIdPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>QR Student Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid no-padding *ngFor="let item of basic_items">
+    <ion-row>
+      <ion-col text-center>
+        <img class="profile-image" [src]="item.stud_photo" >
+      </ion-col>
+    </ion-row>
+    <!-- Ruang Info Basic -->
+    <br>
+    <ion-row>
+      <br>
+      <ion-grid class="bio_info" no-padding>
+        <ion-row>
+          <ion-col col-3>
+            <b>Nama</b>
+          </ion-col>
+          <ion-col>
+            {{item.stud_name}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <b>No.KP</b>
+          </ion-col>
+          <ion-col>
+            {{item.stud_kp}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-row>
+
+    <div *ngIf="this.qr_detail=='level_1'">
+      <!-- Ruang Maklumat Pembelajaran -->
+      <ion-row>
+        <div class="bio_title">
+          <b>Maklumat Akademik</b>
+        </div>
+        <ion-grid class="bio_info" no-padding>
+          <ion-row>
+            <ion-col col-3>
+              <b>Program</b>
+            </ion-col>
+            <ion-col>
+              {{item.stud_course}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-3>
+              <b>No. Matrik</b>
+            </ion-col>
+            <ion-col>
+              {{this.qr_scan}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-3>
+              <b>Penaja</b>
+            </ion-col>
+            <ion-col>
+              {{item.stud_sponsor}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-3>
+              <b>DPM</b>
+            </ion-col>
+            <ion-col>
+              {{item.stud_hostel_no}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-row>
+
+      <!-- Ruang Penjaga -->
+      <ion-row>
+          <div class="bio_title">
+            <b>Maklumat Waris</b>
+          </div>
+          <ion-grid no-padding class="bio_info" *ngFor="let emer of emer_items">
+            <ion-row>
+              <ion-col col-3>
+                <b>Hubungan</b>
+              </ion-col>
+              <ion-col>
+                {{emer.emer_status}}
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <b>Nama</b>
+              </ion-col>
+              <ion-col>
+                {{emer.emer_name}}
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <b>Alamat</b>
+              </ion-col>
+              <ion-col>
+                {{emer.emer_address}}
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <b>No. Tel</b>
+              </ion-col>
+              <ion-col>
+                {{emer.emer_contact}}
+              </ion-col>
+            </ion-row>
+            <br>
+          </ion-grid>
+      </ion-row>
+    </div>
+  </ion-grid>
+
+</ion-content>

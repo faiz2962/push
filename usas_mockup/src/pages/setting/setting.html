@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="header" no-padding>
+      <img alt="logo" width="100%"  align="center" src="assets/imgs/header.png" >
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>Scan for qr with multi-data</div>
+  <ion-item>
+    <ion-label>User Type</ion-label>
+    <ion-select [(ngModel)]="scan_user_multidata" placeholder="Select One">
+      <ion-option value="non-usas">Program</ion-option>
+      <ion-option value="usas">Pegawai USAS</ion-option>
+    </ion-select>
+  </ion-item>
+  <button ion-button (click)="QRpassmulti()" block>Scan QR</button>
+  <br>
+  <hr>
+  <br>
+  <div>Scan for qr with single data</div>
+  <ion-item>
+    <ion-label>User Type</ion-label>
+    <ion-select [(ngModel)]="scan_user" placeholder="Select One">
+      <ion-option value="non-usas">Program</ion-option>
+      <ion-option value="usas">Pegawai USAS</ion-option>
+    </ion-select>
+  </ion-item>
+  <button ion-button (click)="QRpass()" block>Scan QR</button>
+  <br>
+  <hr>
+  <br>
+  <button ion-button full color="danger" (click)="logout()">Logout</button>
+</ion-content>

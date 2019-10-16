@@ -1,0 +1,37 @@
+
+<ion-header no-border>
+  <ion-navbar transparent>
+ </ion-navbar>
+</ion-header>
+
+
+<ion-content text-center padding>
+  <ion-card text-center>
+    <ion-grid >
+      <ion-row >
+        <qrcode [qrdata]="this.qr_items" size="300" [level]="'M'"></qrcode>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <div>{{qr_items}}</div>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <ion-card text-center>
+    <ion-grid >
+      <ion-row >
+        <qrcode [qrdata]="this.student_idpass" size="300" [level]="'M'"></qrcode>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <div>{{this.student_idpass}}</div>
+
+  
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <button ion-button block full class="footer" (click)="dismiss()">Tutup QR-ID</button>
+    </ion-toolbar>
+  </ion-footer>

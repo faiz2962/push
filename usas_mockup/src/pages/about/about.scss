@@ -1,0 +1,23 @@
+page-about {
+    .profile-image {
+        display: block;
+        border-radius: 50%;
+        width: 40%;
+        height: width;
+        margin: 10pt auto 0;
+    }
+    .bio_info{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .bio_title{
+        margin-top: 20pt;
+        margin-bottom: 8pt;
+        margin-left: 3%;
+        margin-right: 3%;
+        color: rgb(0, 155, 193)
+    }
+    ion-fab{
+        margin: 0 0 -20px 0 !important;
+    }
+}

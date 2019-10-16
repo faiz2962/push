@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar color="secondary">
+      <ion-title>All Class Note</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-card class="news" *ngFor="let item of filterItems" (click)="note_detail(item.course_id)">
+      <ion-card-header>
+          <div>{{item.course_id}}: {{item.course_name}}</div>
+      </ion-card-header>
+    </ion-card>
+  </ion-content>
+  

@@ -1,0 +1,28 @@
+
+<ion-header>
+
+    <ion-navbar color="secondary">
+      <ion-title>Course Note</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-card class="news" *ngFor="let item of filterItems">
+      <ion-card-header>
+          <div><b>{{item.title}}</b></div>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-row>
+          <div>{{item.description}}</div>
+        </ion-row>
+        <ion-row>
+          <ion-note>
+            {{item.time}}
+          </ion-note>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  

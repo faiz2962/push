@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="header" no-padding>
+        <img alt="logo" width="100%"  align="center" src="assets/imgs/header.png" >
+    </ion-navbar>
+  </ion-header>
+
+<ion-content no-padding>
+    <ion-card *ngFor="let weekday of weekdays"  class="card_home">
+        <ion-card-header>
+            <div class="c"><b>{{weekday}}</b></div>
+        </ion-card-header>
+        <ion-card-content no-padding>
+            <ion-card class="classlist" *ngFor="let item of items">
+            <div *ngIf="item.day==weekday">
+                <ion-grid class="a">
+                    <ion-row>
+                        <div class="b"><b>{{item.course_id}}: {{item.course_name}}</b></div>
+                    </ion-row>
+                    <ion-row>
+                        Kumpulan: G{{item.group}}
+                    </ion-row>
+                    <ion-row>
+                        Masa: {{item.start_time}} - {{item.end_time}}
+                    </ion-row>
+                    <ion-row>
+                        Tempat: {{item.location}}
+                    </ion-row>
+                    <ion-row>
+                        Pensyarah: {{item.lecturer}}
+                    </ion-row>
+                    <ion-row text-center>
+                        <button class="class_button" (click)="scanCode()" ion-button color="pastel_1">Kehadiran</button>
+                        <button class="class_button" ion-button color="pastel_1">Nota</button>
+                    </ion-row>
+                </ion-grid>
+            </div>
+            </ion-card>
+        </ion-card-content>
+        </ion-card>
+</ion-content>

@@ -1,0 +1,35 @@
+page-class {
+    div.c {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 150%;
+        color: #002b5b;
+    }
+    .b {
+        font-size: 111%;
+    }
+    .a{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    ion-card.classlist{
+        margin-top: 0 !important;
+        margin-bottom: 3px !important;
+        font-size: 1.1em;
+        background-color: #ddfeff;
+    }
+    .content-ios{
+        background-color: #e2e2e2;
+    }
+    .content-md{
+        background-color: #e2e2e2;
+    }
+    .card_home{
+        background-color: #fbfdbe;
+    }
+    .class_button{
+        width: 49%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

@@ -1,0 +1,44 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+  <ion-header no-border>
+      <ion-navbar transparent>
+    </ion-navbar>
+  </ion-header>
+  
+  <div class="move-in">
+    <img src="assets/imgs/login_label.png">
+    <div text-center class="login_item" no-padding>
+        <ion-grid text-center no-padding>
+          <ion-row class="gap-table">
+            <ion-col col-2 text-center no-padding>
+              <ion-card color="login-icon-back">
+                  <ion-icon name="md-person"></ion-icon>
+              </ion-card>
+            </ion-col>
+            <ion-col class="answer-space">
+              <ion-item no-lines>
+                <ion-input type="text" name="student_id" placeholder="No. Matrik" #student_id required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="gap-table">
+            <ion-col col-2 text-center no-padding>
+              <ion-card color="login-icon-back">
+                  <ion-icon name="md-lock"></ion-icon>
+              </ion-card>
+            </ion-col>
+            <ion-col class="answer-space">
+              <ion-item no-lines>
+                <ion-input type="password" name="password" placeholder="Kata Laluan" #password required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="gap-table2">
+            <ion-col>
+              <button class="button" (click)="signIn()">Log Masuk</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+  </div>
+  
+</ion-content>

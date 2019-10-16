@@ -1,0 +1,7 @@
+{
+  "name": "usas_mockup",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
